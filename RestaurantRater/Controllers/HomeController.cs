@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Restaurant.Controllers
+namespace RestaurantRater.Controllers
 {
   public class HomeController : Controller
   {
