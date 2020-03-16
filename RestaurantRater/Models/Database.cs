@@ -1,8 +1,8 @@
 using System;
 using MySql.Data.MySqlClient;
-using Restaurant;
+using RestaurantRater;
 
-namespace Restaurant.Models
+namespace RestaurantRater.Models
 {
   public class DB
   {
