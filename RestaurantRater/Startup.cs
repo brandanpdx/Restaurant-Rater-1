@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace RestaurantRater
+namespace Restaurant
 {
   public class Startup
   {
@@ -21,22 +21,22 @@ namespace RestaurantRater
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddMvc();
-    }
+  }
 
-    public void Configure(IApplicationBuilder app)
+      public void Configure(IApplicationBuilder app)
     {
-      app.UseMvc(routes =>
-      {
-        routes.MapRoute(
-          name: "default",
-          template: "{controller=Home}/{action=Index}/{id?}");
-      });
-
-      app.Run(async (context) =>
-      {
-        await context.Response.WriteAsync("Hello World!");
-      });
-      app.UseStaticFiles();
+        app.UseDeveloperExceptionPage();
+        app.UseMvc(routes =>
+        {
+          routes.MapRoute(
+            name: "default",
+            template: "{controller=Home}/{action=Index}/{id?}");
+        });
+        app.UseStaticFiles();
     }
+  }
+  public static class DBConfiguration
+  {
+    public static string ConnectionString = "server=localhost;user id=root;password=epicodus;port=3306;database=to_do_list;";
   }
 }

@@ -20,6 +20,14 @@ This purpose of this project is to create a aggregator website where users can e
 | User adds new menu item name and price for Applebees | Margaritas, $1.00 | Menu item and price gets saved into database and page redirects back to Menu items | 
 |If user clicks 'goback', redirect user to list of restaurants.|clicks 'goback'|show restaurants page|
 
+/ - GET
+/restaurants - GET
+/restaurants - POST
+/restaurants/new - GET
+/restaurants/{id} - GET
+/restaurants/{id} - POST
+/retaurants/{id}/food/new - GET
+
 
 ## Setup/Installation Requirements
 
@@ -57,4 +65,3 @@ This program was created with:
 This code is licensed under MIT permissive free software license
 
 Copyright (c) 2020 Brandan Sayarath & Jamison Cozart
-
