@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Restaurant
+namespace RestaurantRater
 {
   public class Startup
   {
@@ -37,6 +37,6 @@ namespace Restaurant
   }
   public static class DBConfiguration
   {
-    public static string ConnectionString = "server=localhost;user id=root;password=epicodus;port=3306;database=to_do_list;";
+    public static string ConnectionString = "server=localhost;user id=root;password=epicodus;port=3306;database=restaurant_rater;";
   }
 }

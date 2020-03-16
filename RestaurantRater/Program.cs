@@ -2,9 +2,9 @@ using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using System;
 using System.Collections.Generic;
-using Restaurant.Models;
+using RestaurantRater.Models;
 
-namespace Restaurant
+namespace RestaurantRater
 {
   public class Program
   {
