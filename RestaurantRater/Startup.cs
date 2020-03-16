@@ -36,6 +36,7 @@ namespace RestaurantRater
       {
         await context.Response.WriteAsync("Hello World!");
       });
+      app.UseStaticFiles();
     }
   }
 }
